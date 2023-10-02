@@ -1,0 +1,109 @@
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #008888;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+}
+
+.text {
+  padding: 1em;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+.present-button {
+  position: absolute;
+  right: 9.5rem;
+  top: 3.5rem;
+  border: 2px solid;
+  border-radius: 200px;
+  width: 9rem;
+  height: 2rem;
+  border-color: #25c861;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition: right 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for 'right', 'background-color', and 'color' properties */
+}
+
+.present-button:hover {
+  background-color: #25c861;
+  color: white;
+  right: 9.2rem; /* Move the button to the right when hovered */
+}
+
+
+.gallery-button {
+  position: absolute;
+  right: 20rem;
+  top: 3.5rem;
+  border: 2px solid;
+  border-radius: 200px;
+  width: 9rem;
+  height: 2rem;
+  border-color: #25c861;
+  background-color: #25c861;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: right 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for 'right', 'background-color', and 'color' properties */
+}
+
+.gallery-button::after{
+
+  right: 15rem; /* Move the button to the right when hovered */
+}
