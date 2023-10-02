@@ -107,3 +107,24 @@ img.birthday {
 
   right: 15rem; /* Move the button to the right when hovered */
 }
+
+
+
+
+
+
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .present-button {
+    right: 2rem; /* Adjust the right position for smaller screens */
+  }
+
+  .gallery-button {
+    right: 12rem; /* Adjust the right position for smaller screens */
+  }
+
+  .present-button:hover{
+    right: 1.8rem;
+  }
+}

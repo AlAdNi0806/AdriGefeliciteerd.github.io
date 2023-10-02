@@ -112,3 +112,17 @@ body {
     left: 2rem;
     z-index: 100;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0;
+    }
+  
+    .slider-wrapper {
+      max-width: 90%; /* Adjust the width to make it smaller */
+    }
+  }
